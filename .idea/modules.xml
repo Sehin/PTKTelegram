@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/PTKTelegram.iml" filepath="$PROJECT_DIR$/.idea/PTKTelegram.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/calc/.idea/calc.iml" filepath="$USER_HOME$/PycharmProjects/calc/.idea/calc.iml" />
     </modules>
   </component>
 </project>
