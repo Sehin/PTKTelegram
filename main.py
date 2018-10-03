@@ -1,6 +1,7 @@
 import misc
 import requests
 import classes.message as msg
+import classes.mail as mail
 import time
 import classes.configuration as cfg
 
@@ -106,10 +107,17 @@ def main():
     '''
 
 def test():
-    print('yeah')
+    mailer = mail.MailWorker();
+    for i in mailer.getAllIncidents():
+        print(i.ESPPNum)
+        print(i.EK)
+        print(i.description)
+        print(i.date)
+
+        #todo Удаление всех писем после чтения всех файлов!!!
 
 if __name__ == '__main__':
-    main()
+    test()
 
 
 

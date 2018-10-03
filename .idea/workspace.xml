@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="341a14c9-0084-4682-9eb3-c584fd809730" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PTKTelegram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PTKTelegram.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/incident.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/mail.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/misc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,35 +17,36 @@
     <session id="165971847">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="8" />
+          <entry key="py" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="8" />
+          <entry key="Python" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="3" />
-          <entry key="py" value="5463" />
-          <entry key="txt" value="163" />
+          <entry key="Python Console" value="122" />
+          <entry key="py" value="6951" />
+          <entry key="txt" value="302" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="163" />
-          <entry key="Python" value="5466" />
+          <entry key="PLAIN_TEXT" value="302" />
+          <entry key="Python" value="7073" />
         </counts>
       </usages-collector>
     </session>
@@ -59,19 +56,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+            <state relative-caret-position="438">
+              <caret line="116" column="61" selection-start-line="116" selection-start-column="61" selection-end-line="116" selection-end-column="61" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#154#262#0" />
-                <element signature="e#515#612#0" />
-                <element signature="e#1959#3083#0" />
-                <marker date="1538551855644" expanded="false" signature="220:225" ph="..." />
-                <marker date="1538551855644" expanded="false" signature="358:363" ph="..." />
-                <marker date="1538551855644" expanded="true" signature="358:811" ph="..." />
-                <marker date="1538551855644" expanded="true" signature="844:1943" ph="..." />
-                <marker date="1538551855644" expanded="false" signature="1886:1943" ph="..." />
-                <marker date="1538551855644" expanded="true" signature="3086:3106" ph="..." />
+                <element signature="e#1961#3073#0" />
+                <marker date="1538576428788" expanded="false" signature="248:253" ph="..." />
+                <marker date="1538576428788" expanded="false" signature="386:391" ph="..." />
+                <marker date="1538576428788" expanded="true" signature="386:839" ph="..." />
+                <marker date="1538576428788" expanded="true" signature="872:1971" ph="..." />
+                <marker date="1538576428788" expanded="false" signature="1914:1971" ph="..." />
+                <marker date="1538576428788" expanded="true" signature="3114:3346" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/mail.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1538576262311" expanded="true" signature="137:142" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/incident.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <marker date="1538575809938" expanded="true" signature="15:20" ph="..." />
               </folding>
             </state>
           </provider>
@@ -142,6 +162,8 @@
         <option value="$PROJECT_DIR$/misc.py" />
         <option value="$PROJECT_DIR$/classes/configuration.py" />
         <option value="$PROJECT_DIR$/classes/mainWorker.py" />
+        <option value="$PROJECT_DIR$/classes/incident.py" />
+        <option value="$PROJECT_DIR$/classes/mail.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -262,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538396954398</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Upgrade telegram bot:&#10;1. Subscribe / stop subscribe&#10;2. Method for send message to all users">
+      <created>1538551993413</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538551993413</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -278,12 +307,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27006507" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27006507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,7 +357,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create main functions for work with telegram api (recieve updates, send message). Create Configuration class for work with cfg file." />
-    <option name="LAST_COMMIT_MESSAGE" value="create main functions for work with telegram api (recieve updates, send message). Create Configuration class for work with cfg file." />
+    <MESSAGE value="Upgrade telegram bot:&#10;1. Subscribe / stop subscribe&#10;2. Method for send message to all users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade telegram bot:&#10;1. Subscribe / stop subscribe&#10;2. Method for send message to all users" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="z" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>data[1]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/PycharmProjects/calc/main.py">
@@ -338,9 +389,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/mainWorker.py" />
     <entry file="file://$PROJECT_DIR$/classes/message.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -350,6 +399,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/misc.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -368,28 +420,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/mainWorker.py">
+    <entry file="file://$PROJECT_DIR$/classes/incident.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1538575809938" expanded="true" signature="15:20" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/mail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1538576262311" expanded="true" signature="137:142" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+        <state relative-caret-position="438">
+          <caret line="116" column="61" selection-start-line="116" selection-start-column="61" selection-end-line="116" selection-end-column="61" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#154#262#0" />
-            <element signature="e#515#612#0" />
-            <element signature="e#1959#3083#0" />
-            <marker date="1538551855644" expanded="false" signature="220:225" ph="..." />
-            <marker date="1538551855644" expanded="false" signature="358:363" ph="..." />
-            <marker date="1538551855644" expanded="true" signature="358:811" ph="..." />
-            <marker date="1538551855644" expanded="true" signature="844:1943" ph="..." />
-            <marker date="1538551855644" expanded="false" signature="1886:1943" ph="..." />
-            <marker date="1538551855644" expanded="true" signature="3086:3106" ph="..." />
+            <element signature="e#1961#3073#0" />
+            <marker date="1538576428788" expanded="false" signature="248:253" ph="..." />
+            <marker date="1538576428788" expanded="false" signature="386:391" ph="..." />
+            <marker date="1538576428788" expanded="true" signature="386:839" ph="..." />
+            <marker date="1538576428788" expanded="true" signature="872:1971" ph="..." />
+            <marker date="1538576428788" expanded="false" signature="1914:1971" ph="..." />
+            <marker date="1538576428788" expanded="true" signature="3114:3346" ph="..." />
           </folding>
         </state>
       </provider>
