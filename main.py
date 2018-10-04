@@ -63,6 +63,14 @@ def sendMsgToAllUsers(text, users):
 
 
 
+def sendIncidentsToAllUsers(users):
+    mailer = mail.MailWorker();
+    incidents = mailer.getAllIncidents()
+
+    for user in users:
+        for inc in incidents:
+            sendMessage(user, inc.ESPPNum + '\n' + inc.EK + '\n' + inc.description + '\n' + inc.date)
+
 def main():
     configuration = cfg.Configuration()
     users = configuration.readConfigFile()
@@ -88,7 +96,8 @@ def main():
                 users.remove(q)
                 configuration.updateConfigFile(users)
 
-
+            #Основной метод рассылки
+            sendIncidentsToAllUsers(users)
 
 
         time.sleep(repeatRequestTime)
@@ -114,10 +123,9 @@ def test():
         print(i.description)
         print(i.date)
 
-        #todo Удаление всех писем после чтения всех файлов!!!
 
 if __name__ == '__main__':
-    test()
+    main()
 
 
 

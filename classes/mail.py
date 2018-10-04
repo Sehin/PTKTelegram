@@ -70,6 +70,10 @@ class MailWorker:
                                 inc = incident.Incident(i[0], i[1], i[2])
                                 incs.add(inc)
 
+            # Удаление сообщений
+            connection.store(num, '+FLAGS', '\\Deleted')
+            connection.expunge()
+
 
         connection.close()
         connection.logout()
