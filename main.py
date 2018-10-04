@@ -98,7 +98,7 @@ def main():
 
     while 1:
         for message in getMessages():
-            userLogger.info("User " + str(message.chatId) + " send to bot: " + str(message.text))
+            #userLogger.info("User " + str(message.chatId) + " send to bot: " + str(message.text))
             # -----------------------------
             # ОСНОВНАЯ ОБРАБОТКА СОБЩЕНИЙ!!!
             # -----------------------------
@@ -109,14 +109,14 @@ def main():
             if q != None:
                 users.add(q)
                 dbworker.insertUser(q)
-                infoLogger.info("User add to subscribe " + q)
+                #infoLogger.info("User add to subscribe " + q)
 
             # Все, что связано с отпиской
             q = checkStopInput(message.chatId, message.text, users)
             if q!= None:
                 users.remove(q)
                 dbworker.removeUser(q)
-                infoLogger.info("User remove from subscribe " + q)
+                #infoLogger.info("User remove from subscribe " + q)
 
         # Основной метод рассылки
         sendIncidentsToAllUsers(users)
