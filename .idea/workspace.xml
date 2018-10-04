@@ -35,12 +35,12 @@
         <counts>
           <entry key="Python Console" value="122" />
           <entry key="py" value="9241" />
-          <entry key="txt" value="789" />
+          <entry key="txt" value="812" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="789" />
+          <entry key="PLAIN_TEXT" value="812" />
           <entry key="Python" value="9363" />
         </counts>
       </usages-collector>
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="118" column="17" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+            <state relative-caret-position="510">
+              <caret line="145" column="10" lean-forward="true" selection-start-line="145" selection-start-column="10" selection-end-line="145" selection-end-column="10" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#877#974#0" />
@@ -330,7 +330,21 @@
       <option name="project" value="LOCAL" />
       <updated>1538669541296</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Version 0.21:&#10;added requirements.txt">
+      <created>1538670304410</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538670304410</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Version 0.21:&#10;added requirements.txt">
+      <created>1538670320151</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1538670320151</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -344,6 +358,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -400,7 +415,8 @@
     <MESSAGE value="Version 0.1:&#10;Work with gmail through imap&#10;Check all mails and get attachments&#10;Parse attachments and send them to bot subscribers" />
     <MESSAGE value="Version 0.2:&#10;UPDATE&#10;rework bot to work with MySQL db (remove local files! ready to heroku)" />
     <MESSAGE value="Version 0.21:&#10;remove some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 0.21:&#10;remove some files" />
+    <MESSAGE value="Version 0.21:&#10;added requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 0.21:&#10;added requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -503,8 +519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="118" column="17" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+        <state relative-caret-position="510">
+          <caret line="145" column="10" lean-forward="true" selection-start-line="145" selection-start-column="10" selection-end-line="145" selection-end-column="10" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#877#974#0" />
