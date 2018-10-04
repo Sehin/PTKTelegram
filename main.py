@@ -1,17 +1,31 @@
 import misc
 import requests
+import logging
 import classes.message as msg
 import classes.mail as mail
 import time
 import classes.configuration as cfg
+import classes.db_worker as db
 
 token = misc.token
 URL = 'https://api.telegram.org/bot'
 offsetId = 1
 repeatRequestTime = 5
 
+infoLogger = logging.getLogger("infoLogger")
+userLogger = logging.getLogger("userLogger")
 
+infoLogger.setLevel(logging.INFO)
+userLogger.setLevel(logging.INFO)
 
+fhInfo = logging.FileHandler("info.log")
+fhUser = logging.FileHandler("user.log")
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fhInfo.setFormatter(formatter)
+fhUser.setFormatter(formatter)
+
+infoLogger.addHandler(fhInfo)
+userLogger.addHandler(fhUser)
 
 
 def getUpdates():
@@ -72,13 +86,19 @@ def sendIncidentsToAllUsers(users):
             sendMessage(user, inc.ESPPNum + '\n' + inc.EK + '\n' + inc.description + '\n' + inc.date)
 
 def main():
-    configuration = cfg.Configuration()
-    users = configuration.readConfigFile()
+    dbworker = db.DBworker()
+    users = dbworker.selectUsers()
+
+    #configuration = cfg.Configuration()
+    #users = configuration.readConfigFile()
     #sendMsgToAllUsers("Бот активирован! Ожидайте рассылку", users)
+
+
+    infoLogger.info("Program started!")
 
     while 1:
         for message in getMessages():
-
+            userLogger.info("User " + str(message.chatId) + " send to bot: " + str(message.text))
             # -----------------------------
             # ОСНОВНАЯ ОБРАБОТКА СОБЩЕНИЙ!!!
             # -----------------------------
@@ -88,17 +108,18 @@ def main():
             q = checkPasswordInput(message.chatId, message.text, users)
             if q != None:
                 users.add(q)
-                configuration.updateConfigFile(users)
+                dbworker.insertUser(q)
+                infoLogger.info("User add to subscribe " + q)
 
             # Все, что связано с отпиской
             q = checkStopInput(message.chatId, message.text, users)
             if q!= None:
                 users.remove(q)
-                configuration.updateConfigFile(users)
+                dbworker.removeUser(q)
+                infoLogger.info("User remove from subscribe " + q)
 
-            #Основной метод рассылки
-            sendIncidentsToAllUsers(users)
-
+        # Основной метод рассылки
+        sendIncidentsToAllUsers(users)
 
         time.sleep(repeatRequestTime)
 
@@ -116,17 +137,14 @@ def main():
     '''
 
 def test():
-    mailer = mail.MailWorker();
-    for i in mailer.getAllIncidents():
-        print(i.ESPPNum)
-        print(i.EK)
-        print(i.description)
-        print(i.date)
+    dbworker = db.DBworker()
+    print(dbworker.selectUsers())
+
 
 
 if __name__ == '__main__':
     main()
-
+    #test()
 
 
 '''

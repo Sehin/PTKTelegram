@@ -3,6 +3,12 @@ class Configuration:
         pass
 
     def updateConfigFile(self, users):
+        pass
+
+    def readConfigFile(self):
+        pass
+'''
+    def updateConfigFile(self, users):
         with open('config.cfg', 'w') as file:
             for user in users:
                 file.write(str(user) + '\n')
@@ -14,3 +20,5 @@ class Configuration:
             for line in file.readlines():
                 users.add(line.rstrip())
         return users
+'''
+
