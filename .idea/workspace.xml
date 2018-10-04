@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="341a14c9-0084-4682-9eb3-c584fd809730" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="341a14c9-0084-4682-9eb3-c584fd809730" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +35,12 @@
         <counts>
           <entry key="Python Console" value="122" />
           <entry key="py" value="9241" />
-          <entry key="txt" value="767" />
+          <entry key="txt" value="789" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="767" />
+          <entry key="PLAIN_TEXT" value="789" />
           <entry key="Python" value="9363" />
         </counts>
       </usages-collector>
@@ -326,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538666279425</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Version 0.21:&#10;remove some files">
+      <created>1538669541296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538669541296</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -340,14 +344,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27006507" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27006507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,7 +399,8 @@
     <MESSAGE value="Functions for mail working through imap&#10;Already take all mails from email and convert them to incident class (pack them in set)" />
     <MESSAGE value="Version 0.1:&#10;Work with gmail through imap&#10;Check all mails and get attachments&#10;Parse attachments and send them to bot subscribers" />
     <MESSAGE value="Version 0.2:&#10;UPDATE&#10;rework bot to work with MySQL db (remove local files! ready to heroku)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 0.2:&#10;UPDATE&#10;rework bot to work with MySQL db (remove local files! ready to heroku)" />
+    <MESSAGE value="Version 0.21:&#10;remove some files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 0.21:&#10;remove some files" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
