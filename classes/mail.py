@@ -2,9 +2,11 @@ import imaplib
 import email
 import classes.incident as incident
 
+
 class MailWorker:
     connection = ""
     SENDER = "smenaptk@rzd.gvc.ru"
+
     def __init__(self):
         global connection
         connection = imaplib.IMAP4_SSL('imap.gmail.com')
@@ -33,14 +35,13 @@ class MailWorker:
                     # Нам плохого не надо, в письме может быть всякое барахло
                     x = part.get_payload(decode=True).decode('utf-8')
                     print(x)
-                    #text = text.encode('UTF-8')
-                    #with open(part.get_filename(), 'wb') as new_file:
+                    # text = text.encode('UTF-8')
+                    # with open(part.get_filename(), 'wb') as new_file:
                     #    new_file.write(part.get_payload(decode=True))
         pass
 
     def getAllIncidents(self):
         incs = set()
-
 
         status, msgs = connection.select('INBOX')
         assert status == 'OK'
@@ -48,10 +49,9 @@ class MailWorker:
         print(data)
         for num in data[0].split():
             typ, message_data = connection.fetch(num, '(RFC822)')
-            #print(data)
-            #print('Message %s\n%s\n' % (num, message_data[0][1]))
+            # print(data)
+            # print('Message %s\n%s\n' % (num, message_data[0][1]))
             print(num)
-
 
             mail = email.message_from_bytes(message_data[0][1])
 
@@ -63,17 +63,16 @@ class MailWorker:
                         z = str(x).split('\r')
                         for i in z:
                             i = i.split(';')
-                            if len(i)==4:
+                            if len(i) == 4:
                                 inc = incident.Incident(i[0], i[1], i[2], i[3])
                                 incs.add(inc)
-                            elif len(i)==3:
+                            elif len(i) == 3:
                                 inc = incident.Incident(i[0], i[1], i[2])
                                 incs.add(inc)
 
             # Удаление сообщений
             connection.store(num, '+FLAGS', '\\Deleted')
             connection.expunge()
-
 
         connection.close()
         connection.logout()
